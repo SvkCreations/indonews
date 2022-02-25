@@ -10,8 +10,8 @@ fetch(req)
   })
   .then((data) => {
     for (let i = 0; i < 7; i++) {
-      title = data.articles[i].title;
-      urlToImage = data.articles[i].urlToImage;
+      let title = data.articles[i].title;
+      let urlToImage = data.articles[i].urlToImage;
       topNewsRow.innerHTML += `<div class="row mt-3">
          <div class="col-5">
              <img src="${urlToImage}" alt="" class="img-fluid">
@@ -36,8 +36,8 @@ fetch(genReq)
   })
   .then((data) => {
     for (let i = 0; i < 5; i++) {
-      title = data.articles[i].title;
-      urlToImage = data.articles[i].urlToImage;
+      let title = data.articles[i].title;
+      let urlToImage = data.articles[i].urlToImage;
       generalNewsRow.innerHTML += `<div class="row mt-3">
          <div class="col-5">
              <img src="${urlToImage}" alt="" class="img-fluid">
@@ -62,8 +62,8 @@ fetch(entertainmentReq)
   })
   .then((data) => {
     for (let i = 0; i < 4; i++) {
-      title = data.articles[i].title;
-      urlToImage = data.articles[i].urlToImage;
+      let title = data.articles[i].title;
+      let urlToImage = data.articles[i].urlToImage;
       entertainmentNewsRow.innerHTML += `<div class="row mt-3">
          <div class="col-5">
              <img src="${urlToImage}" alt="" class="img-fluid">
